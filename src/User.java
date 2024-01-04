@@ -9,13 +9,6 @@ public class User {
 
     private char permissions;
 
-    public boolean validateLogin(String email, String password){
-        if (email!=null && password!=null){
-            return Objects.equals(email, this.email) && Objects.equals(password, this.password);
-        }
-        return false;
-    }
-
     public void createUser(Scanner scan){
         System.out.println("To create an user, type its email");
         String email = scan.nextLine();
@@ -36,6 +29,28 @@ public class User {
         this.email=email;
         this.password=password;
         this.permissions=permissions;
+    }
+
+    public void editUser(Scanner scan){
+        System.out.println("To modify an user, type its email");
+        String email = scan.nextLine();
+        if (!isValidEmail(email)){
+            System.out.println("invalid email, try again");
+            return;
+        }
+        System.out.println("Now type the password");
+        String password = scan.nextLine();
+
+        this.email=email;
+        this.password=password;
+    }
+
+
+    public boolean validateLogin(String email, String password){
+        if (email!=null && password!=null){
+            return Objects.equals(email, this.email) && Objects.equals(password, this.password);
+        }
+        return false;
     }
 
     public boolean isValidEmail(String email){
