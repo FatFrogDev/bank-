@@ -1,10 +1,4 @@
-import java.util.List;
-<<<<<<< HEAD
-=======
-
-public class Client extends User{
->>>>>>> 14f4ab4f5e4bccf3c934551911f368d6a38bef34
-
+import java.util.*;
 public class Client extends User{
     private int id;
     private String name;
@@ -67,6 +61,4 @@ public class Client extends User{
         System.out.println("Documento: " + getDocument());
         System.out.println("Correo: ");
     }
-
-    private List<BankProduct> products;
 }

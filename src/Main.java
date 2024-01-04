@@ -1,9 +1,7 @@
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-<<<<<<< HEAD
         Scanner sc = new Scanner(System.in);
         Client client = new Client();
 
@@ -36,7 +34,5 @@ public class Main {
         }while(op!=0);
 
         sc.close();
-=======
->>>>>>> 14f4ab4f5e4bccf3c934551911f368d6a38bef34
     }
 }
