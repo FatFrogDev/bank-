@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Crea una lista de productos (BankProduct) para usarla al crear un cliente
+        // Lista de productos (BankProduct) para usarla al crear cliente
         List<BankProduct> productList = new ArrayList<>();
 
         // Crear cliente por defecto
