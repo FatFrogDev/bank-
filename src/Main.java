@@ -1,9 +1,16 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Client client = new Client();
+
+        // Crea una lista de productos (BankProduct) para usarla al crear un cliente
+        List<BankProduct> productList = new ArrayList<>();
+
+        // Crear cliente por defecto
+        Client client = new Client(1, "Oscar", 123456789, productList);
 
         int op;
         do{
@@ -22,13 +29,13 @@ public class Main {
                     client.showPersonalInfo();
                     break;
                 case 2:
-                    client.modifyPersonalInfo();
+                    // client.modifyPersonalInfo();
                     break;
                 case 3:
                     client.showProducts();
                     break;
                 case 4:
-                    client.modifyAccount();
+                    // client.modifyAccount();
                     break;
             }
         }while(op!=0);

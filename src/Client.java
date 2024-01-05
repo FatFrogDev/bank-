@@ -4,6 +4,7 @@ public class Client extends User{
     private String name;
     private int document;
     private List<BankProduct> products;
+    //private Productos[] productos;
 
     // Getters & Setters
     public Client(int id, String name, int document, List<BankProduct> products) {
